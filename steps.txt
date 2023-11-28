@@ -1,0 +1,13 @@
+1. npm i express jsonwebtoken bcryptjs mongoose cookie-parser dotenv
+
+* nodemon -D
+
+2. set up server.js
+3. create .env
+4. set up mongoDb account -- dbName - threads --collName -users
+5. create .gitIgnore and add node_modules + env
+6. create db folder -- connectDB.js
+7. create models -- i. userModels ii. postModel
+8. create the middleware.
+9. create routes folder
+10. create userController - signUp function first.... create helpers folder inside utils
