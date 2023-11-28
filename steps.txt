@@ -9,7 +9,7 @@
 6. create db folder -- connectDB.js
 7. create models -- i. userModels ii. postModel
 8. create the middleware.
-9. create routes folder
+9. create routes folder with the respective routes
 10. create userController - signUp function first.... create helpers folder inside utils
 
 0809ja4life#
