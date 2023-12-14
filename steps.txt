@@ -15,4 +15,7 @@
 0809ja4life#
 
 **************************************
-1. Reply to post
+1. get user post
+
+******* connect backend to frontend
+1. modify the vite.config file content

@@ -7,12 +7,23 @@ import postRoutes from "./routes/postRoutes.js";
 import messageRoutes from "./routes/messageRoutes.js";
 import { v2 as cloudinary } from "cloudinary";
 import { app, server } from "./socket/socket.js";
+import cors from 'cors'
 
 dotenv.config();
 
 connectDB();
 
 const PORT = process.env.PORT || 5000;
+
+app.use(cors({
+  origin: [
+    "http://localhost:3000",
+    "https://threads-frontend-ten.vercel.app", 
+    "*"
+],
+  credentials: true,
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE', 
+}));
 
 cloudinary.config({
   cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
